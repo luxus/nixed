@@ -2,13 +2,12 @@
 
 {
   homebrew.casks = [
-    "betterdiscord-installer"
-    "discord"
+    "discord-canary"
     "element"
     "signal"
-    "skype"
     "slack"
-    "whatsapp"
     "zoom"
+    "microsoft-teams"
+    "sidekick"
   ];
 }

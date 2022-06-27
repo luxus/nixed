@@ -2,7 +2,7 @@
 
 {
   homebrew.casks = [
-    "bitwarden"
-    "protonvpn"
+    "1password"
+    "tailscale"
   ];
 }
