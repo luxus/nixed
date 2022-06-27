@@ -11,11 +11,14 @@ in
       bat
       binutils
       coreutils
+      #FIXME: fails on aarch64
+      # uutils-coreutils
+      # dnsutils
+      # exa
       curl
-      dnsutils
       dosfstools
       dutree
-      exa
+      fish
       fd
       git
       bottom
@@ -24,9 +27,10 @@ in
       manix
       moreutils
       nix-index
-      neovim
+      prettyping
       neovim-nightly
       nmap
+       lazygit
       ripgrep
       skim
       tealdeer
