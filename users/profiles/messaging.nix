@@ -7,6 +7,5 @@ lib.mkIf pkgs.stdenv.isLinux {
     signal-desktop
     slack
     zoom-us
-    skypeforlinux
   ];
 }
