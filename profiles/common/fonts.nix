@@ -3,10 +3,8 @@
 {
   fonts = {
     fonts = with pkgs; [
-      ibm-plex
-      (nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
-      font-awesome
+      (nerdfonts.override { fonts = [ "Inconsolata" "IBMPlexMono" "CascadiaCode" "SourceCodePro" "FiraCode" "Hack" "Iosevka"]; })
     ];
-    fontDir.enable = true;
+    # fontDir.enable = true;
   };
 }
