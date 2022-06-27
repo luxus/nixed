@@ -13,6 +13,8 @@
 
     home.url = "github:nix-community/home-manager";
     home.inputs.nixpkgs.follows = "nixos";
+    neovim-nightly.url = "github:nix-community/neovim-nightly-overlay";
+    neovim-nightly.inputs.nixpkgs.follows = "nixos";
 
     darwin.url = "github:LnL7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixos";
@@ -36,6 +38,7 @@
     , home
     , agenix
     , deploy
+    , neovim-nightly
     , ...
     }@inputs:
     digga.lib.mkFlake {
@@ -50,6 +53,7 @@
           ];
           overlays = [
             inputs.leftwm.overlay
+            inputs.neovim-nightly.overlay
           ];
         };
         latest = { };

@@ -25,6 +25,7 @@ in
       moreutils
       nix-index
       neovim
+      neovim-nightly
       nmap
       ripgrep
       skim
