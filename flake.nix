@@ -92,8 +92,7 @@
 
         imports = [ (digga.lib.importHosts ./hosts/nixos) ];
         hosts = {
-          DerekCarr = { };
-          HunterRenfrow = { };
+          vanessa = { };
         };
         importables = rec {
           profiles = digga.lib.rakeLeaves ./profiles/common //
@@ -130,7 +129,7 @@
 
       darwin = {
         hostDefaults = {
-          system = "x86_64-darwin";
+          system = "aarch64-darwin";
           channelName = "nixos";
           imports = [
             (digga.lib.importExportableModules ./modules/common)
@@ -145,8 +144,7 @@
 
         imports = [ (digga.lib.importHosts ./hosts/darwin) ];
         hosts = {
-          CharlesWoodson = { };
-          SebastianJanikowski = { };
+          emily = { };
         };
         importables = rec {
           profiles = digga.lib.rakeLeaves ./profiles/common //
@@ -184,7 +182,7 @@
               nerdfetch
               starship
               fuck
-              exa
+              # exa
               bat
               zoxide
               nvim
