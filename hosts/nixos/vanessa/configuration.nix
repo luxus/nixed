@@ -6,10 +6,10 @@
       ./hardware-configuration.nix
     ];
 
-  time.timeZone = "America/Los_Angeles";
+  time.timeZone = "Europe/Zurich";
 
   networking = {
-    hostName = "DerekCarr";
+    hostName = "vanessa";
     useDHCP = false;
     networkmanager = {
       enable = true;
@@ -25,11 +25,11 @@
     openFirewall = true;
   };
 
-  age.secrets.varun-user-TheBeastNix.file = "${self}/secrets/varun-user-TheBeastNix.age";
-  users.users.varun.passwordFile = "/run/agenix/varun-user-TheBeastNix";
+  age.secrets.luxus-user-vanessa.file = "${self}/secrets/luxus-user-vanessa.age";
+  users.users.luxus.passwordFile = "/run/agenix/luxus-user-vanessa";
 
-  age.secrets.root-user-TheBeastNix.file = "${self}/secrets/root-user-TheBeastNix.age";
-  users.users.root.passwordFile = "/run/agenix/root-user-TheBeastNix";
+  age.secrets.root-user-vanessa.file = "${self}/secrets/root-user-vanessa.age";
+  users.users.root.passwordFile = "/run/agenix/root-user-vanessa";
 
   home-manager.sharedModules = [
     {
