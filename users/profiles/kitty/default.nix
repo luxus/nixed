@@ -30,8 +30,8 @@ lib.mkMerge [
   (lib.mkIf isDarwin {
     home.activation.setKittyIcon = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
       original_sum=$(sha256sum /Applications/kitty.app/Contents/Resources/kitty.icns)
-
-      /usr/local/bin/fileicon -q set /Applications/kitty.app ${icon}
+#FIXME: only aarch
+      /opt/homebrew/bin/fileicon -q set /Applications/kitty.app ${icon}
 
       if [ "$original_sum" != "$(sha256sum /Applications/kitty.app/Contents/Resources/kitty.icns)" ]; then
         killall Dock && killall Finder
