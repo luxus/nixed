@@ -2,6 +2,7 @@
 
 lib.mkIf pkgs.stdenv.isLinux {
   home.packages = with pkgs; [
-    bitwarden
+    _1password_gui
+    _1password
   ];
 }
