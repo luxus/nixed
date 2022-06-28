@@ -31,7 +31,7 @@ in
       prettyping
       neovim-nightly
       nmap
-       lazygit
+      lazygit
       ripgrep
       skim
       tealdeer
