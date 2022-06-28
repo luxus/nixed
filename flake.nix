@@ -186,6 +186,7 @@
               bat
               zoxide
               nvim
+              mcfly
             ];
             dev = [
               direnv
