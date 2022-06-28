@@ -186,6 +186,7 @@
               bat
               zoxide
               nvim
+              lsd
               mcfly
             ];
             dev = [
