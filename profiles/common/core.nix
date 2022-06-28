@@ -27,6 +27,7 @@ in
       manix
       moreutils
       nix-index
+      gnupg
       prettyping
       neovim-nightly
       nmap
