@@ -17,6 +17,7 @@ in
       exa
       curl
       broot
+      zellij
       dosfstools
       dutree
       fish

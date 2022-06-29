@@ -186,6 +186,7 @@
               broot
               bat
               zoxide
+              zellij
               nvim
               lsd
               mcfly

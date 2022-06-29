@@ -17,6 +17,7 @@ channels: final: prev: {
     lsd
     dnsutils
     exa
+    zellij
     ;
 
   # nix is set to 2.3 in 21.11
