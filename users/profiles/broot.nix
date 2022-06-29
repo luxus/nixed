@@ -3,6 +3,8 @@
 {
   programs.broot = {
     enable = true;
-    enableAliases = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
   };
 }

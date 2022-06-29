@@ -183,6 +183,7 @@
               starship
               fuck
               # exa
+              broot
               bat
               zoxide
               nvim
