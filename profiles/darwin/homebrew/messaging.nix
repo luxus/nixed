@@ -8,6 +8,6 @@
     "slack"
     "zoom"
     "microsoft-teams"
-    "sidekick"
+    "pushplaylabs-sidekick"
   ];
 }
