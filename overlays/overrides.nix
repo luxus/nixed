@@ -13,6 +13,10 @@ channels: final: prev: {
     signal-desktop
     starship
     deploy-rs
+    pyopenssl
+    lsd
+    dnsutils
+    exa
     ;
 
   # nix is set to 2.3 in 21.11

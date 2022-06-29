@@ -12,9 +12,9 @@ in
       binutils
       coreutils
       #FIXME: fails on aarch64
-      # uutils-coreutils
       # dnsutils
-      # exa
+      #uutils-coreutils
+      exa
       curl
       broot
       dosfstools
