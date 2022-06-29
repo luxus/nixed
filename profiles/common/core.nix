@@ -16,6 +16,7 @@ in
       # dnsutils
       # exa
       curl
+      broot
       dosfstools
       dutree
       fish
