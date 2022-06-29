@@ -5,5 +5,6 @@
     "visual-studio-code"
     "logseq"
     "gitkraken"
+    "lapce"
   ];
 }
