@@ -24,6 +24,12 @@ in
       fd
       git
       bottom
+      btop
+      difftastic
+      gitui
+      du-dust
+      bandwhich
+      prettyping
       jq
       lsof
       manix
@@ -44,6 +50,7 @@ in
     ] ++ (lib.optionals isLinux [
       gptfdisk
       iputils
+      wtf
       file
       procs
       usbutils
