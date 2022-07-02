@@ -31,7 +31,8 @@ in
   commands = with pkgs; [
     (nixed nix)
     (nixed agenix)
-    (nixed nvfetcher)
+#FIXME:Failing on aarch64
+    # (nixed nvfetcher)
     (nixed inputs.deploy.packages.${pkgs.system}.deploy-rs)
 
     (linter stylua)
