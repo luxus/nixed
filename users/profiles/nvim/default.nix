@@ -16,7 +16,7 @@ in
 
     withPython3 = true;
     withRuby = false;
-    withNodeJs = false;
+    withNodeJs = true;
 
     extraPackages = with pkgs; [
     #   # Language servers
@@ -45,9 +45,11 @@ in
        nodePackages.alex
       nodePackages.prettier
       nodePackages.markdownlint-cli
+      nodejs
+      nodePackages.npm
       proselint
       python3Packages.flake8
-
+      lua53Packages.luacheck
        # failed on aarch64
       #  shellcheck
        shellharden
