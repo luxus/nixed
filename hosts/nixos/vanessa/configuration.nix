@@ -29,7 +29,9 @@
   users.users.luxus.passwordFile = "/run/agenix/luxus-user-vanessa";
   age.secrets.root-user-vanessa.file = "${self}/secrets/root-user-vanessa.age";
   users.users.root.passwordFile = "/run/agenix/root-user-vanessa";
-
+  age.identityPaths = [
+    "/persist/etc/ssh/ssh_host_ed25519_key"
+  ];
   home-manager.sharedModules = [
     {
       services.polybar.config."module/wlan".interface = lib.mkForce "wlo1";
