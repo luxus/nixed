@@ -1,15 +1,15 @@
 { self, config, pkgs, ... }:
 
 {
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-
   services.pipewire = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
+    wireplumber.enable = true;
+    media-session.enable = false;
+
+    # emulations
     pulse.enable = true;
     jack.enable = true;
-    socketActivation = true;
+    alsa.enable = true;
   };
+  hardware.pulseaudio.enable = false;
 }

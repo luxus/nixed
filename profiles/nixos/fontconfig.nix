@@ -1,6 +1,7 @@
 { self, config, pkgs, ... }:
 
 {
+  fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {
     monospace = [ "BlexMono Nerd Font" ];
     sansSerif = [ "IBM Plex Sans" "IBM Plex Sans JP" ];
