@@ -205,11 +205,13 @@
               dconf
               fcitx5
               picom
+              obs-studio
               polybar
               rofi
               dunst
               feh
               xsecurelock
+              # steam
             ];
             apps = [
               kitty

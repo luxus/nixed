@@ -5,8 +5,10 @@ in
 {
   fonts = {
     fonts = with pkgs; [
-      (nerdfonts.override { fonts = [ "Inconsolata" "IBMPlexMono" "CascadiaCode" "SourceCodePro" "FiraCode" "Hack" "Iosevka"]; })
-    ] ++ (lib.optionals isLinux{ 
-     fontDir.enable = true;
-  });};
+      corefonts # Micrsoft free fonts
+      noto-fonts-emoji
+      emojione
+      (nerdfonts.override { fonts = [ "Inconsolata" "IBMPlexMono" "CascadiaCode" "SourceCodePro" "FiraCode" "Hack" "Iosevka" "AnonymousPro" ]; })
+    ];
+  };
 }

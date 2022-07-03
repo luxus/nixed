@@ -17,12 +17,12 @@
     GLFW_IM_MODULE = "ibus"; # Fcitx5 has an IBus emulation mode, this is for IME in kitty to work.
   };
 
-  xdg.dataFile."fcitx5/themes".source = pkgs.fetchFromGitHub {
-    owner = "icy-thought";
-    repo = "fcitx5-catppuccin";
-    rev = "3b699870fb2806404e305fe34a3d2541d8ed5ef5";
-    sha256 = "hOAcjgj6jDWtCGMs4Gd49sAAOsovGXm++TKU3NhZt8w=";
-  };
+  # xdg.dataFile."fcitx5/themes".source = pkgs.fetchFromGitHub {
+  #   owner = "icy-thought";
+  #   repo = "fcitx5-catppuccin";
+  #   rev = "3b699870fb2806404e305fe34a3d2541d8ed5ef5";
+  #   sha256 = "hOAcjgj6jDWtCGMs4Gd49sAAOsovGXm++TKU3NhZt8w=";
+  # };
 
   # Configuring input engines here directly.
   # Kinda cumbersome to use but it is what it is
