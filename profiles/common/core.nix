@@ -4,13 +4,13 @@ let
   inherit (pkgs.stdenv) isLinux;
 in
 {
-  programs.java.enable = true;
+  # programs.java.enable = true;
   programs.zsh.enable = true;
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
+  # programs.steam = {
+  #   enable = true;
+  #   remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+  #   dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  # };
   environment = {
     systemPackages = with pkgs; [
       bat
@@ -55,13 +55,24 @@ in
       tree
       whois
       zoxide
+      wego
+      atiun
+      duf
+      aria2
+      dog
+      procs
+      is-up-cli
+      ncspot
+      ncdu
     ] ++ (lib.optionals isLinux [
       gptfdisk
+      iputils
+      wtf
+      ##graphical
       gitkraken
       brave
       logseq
-      iputils
-      wtf
+      protonup
       steam-run-native
       steam.run
       # (steam.override { withJava = true; })

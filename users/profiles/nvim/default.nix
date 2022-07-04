@@ -47,6 +47,7 @@ in
       nodePackages.markdownlint-cli
       nodejs
       nodePackages.npm
+      vale
       proselint
       python3Packages.flake8
       lua53Packages.luacheck
