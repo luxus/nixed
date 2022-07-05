@@ -189,7 +189,8 @@
               zellij
               nvim
               lsd
-              mcfly
+              # mcfly
+              atuin
             ];
             dev = [
               direnv
