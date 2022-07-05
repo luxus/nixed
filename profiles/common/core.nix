@@ -56,12 +56,11 @@ in
       whois
       zoxide
       wego
-      atiun
+      atuin
       duf
       aria2
       dog
       procs
-      is-up-cli
       ncspot
       ncdu
     ] ++ (lib.optionals isLinux [
@@ -71,6 +70,8 @@ in
       ##graphical
       gitkraken
       brave
+      thunderbird
+      haruna
       logseq
       protonup
       steam-run-native

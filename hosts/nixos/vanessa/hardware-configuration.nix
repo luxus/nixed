@@ -6,6 +6,8 @@
     refind
   ];
 
+
+  systemd.coredump.enable = true;
   boot = {
     loader = {
       timeout = lib.mkDefault 5;
@@ -18,21 +20,22 @@
       };
     };
 
-    # initrd = {
-    #   luks.devices."root" = {
-    #     device = "/dev/disk/by-uuid/201c36cc-a740-4d8e-8956-b63784c9d475";
-    #     preLVM = true;
-    #     keyFile = "/keyfile.bin";
-    #     allowDiscards = true;
-    #   };
-    #   secrets = {
-    #     "keyfile.bin" = "/etc/secrets/initrd/keyfile.bin";
-    #   };
-    #   availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
-    #   kernelModules = [ "dm-snapshot" "amdgpu" ];
-    #   systemd.enable = true;
-    #   verbose = false;
-    # };
+
+    initrd = {
+      #   luks.devices."root" = {
+      #     device = "/dev/disk/by-uuid/201c36cc-a740-4d8e-8956-b63784c9d475";
+      #     preLVM = true;
+      #     keyFile = "/keyfile.bin";
+      #     allowDiscards = true;
+      #   };
+      #   secrets = {
+      #     "keyfile.bin" = "/etc/secrets/initrd/keyfile.bin";
+      #   };
+      #   availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
+      #   kernelModules = [ "dm-snapshot" "amdgpu" ];
+      systemd.enable = true;
+      verbose = false;
+    };
 
     # kernelModules = [ "amdgpu" "kvm-amd" "wl" ];
     # kernelParams = [
@@ -96,7 +99,7 @@
     "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
   # environment.global-persistence.enable = true;
   # environment.global-persistence.root = "/persist";
-  boot.kernelModules = [ "kvm-intel" "wl" ];
+  boot.kernelModules = [ "v4l2loopback" "kvm-intel" "wl" ];
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" "sr_mod" "uas" ];
   boot.initrd.luks.forceLuksSupportInInitrd = true;
   boot.extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
