@@ -20,9 +20,7 @@ in
       # dnsutils
       #uutils-coreutils
       exa
-      gnumake
       unzip
-      gcc
       curl
       broot
       zellij
@@ -34,37 +32,53 @@ in
       bottom
       btop
       difftastic
+      delta
       gitui
+      micro
+      _1password
       du-dust
       bandwhich
+      hyperfine
+      crabz
+      # funzzy
+      diskonaut
       prettyping
       jq
       lsof
       manix
       moreutils
       nix-index
+      fd
       gnupg
       prettyping
       neovim-nightly
       nmap
+      # rip
+      gfold
       lazygit
       ripgrep
-      skim
+      sd
+      skim # sk - replacement for grep
       tealdeer
       tokei
       tree
       whois
       zoxide
       wego
-      atiun
+      atuin
       duf
-      aria2
       dog
       procs
-      is-up-cli
       ncspot
+      ouch
       ncdu
     ] ++ (lib.optionals isLinux [
+      #FIXME: fails on aarch64
+      aria2
+      #FIXME: not needed on aarch64?
+      gnumake
+      gcc
+
       gptfdisk
       iputils
       wtf
@@ -72,6 +86,7 @@ in
       gitkraken
       brave
       logseq
+      vaultwarden
       protonup
       steam-run-native
       steam.run
