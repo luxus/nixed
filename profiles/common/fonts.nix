@@ -6,8 +6,9 @@ in
   fonts = {
     fonts = with pkgs; [
       corefonts # Micrsoft free fonts
-      noto-fonts-emoji
-      emojione
+      # noto-fonts-emoji
+      iosevka
+      # emojione
       (nerdfonts.override { fonts = [ "Inconsolata" "IBMPlexMono" "CascadiaCode" "SourceCodePro" "FiraCode" "Hack" "Iosevka" "AnonymousPro" ]; })
     ];
   };
