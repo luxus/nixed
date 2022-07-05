@@ -102,7 +102,8 @@
   boot.kernelModules = [ "v4l2loopback" "kvm-intel" "wl" ];
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" "sr_mod" "uas" ];
   boot.initrd.luks.forceLuksSupportInInitrd = true;
-  boot.extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback.out broadcom_sta ];
+  boot.extraModprobeConfig = "options v4l2loopback exclusive_caps=1";
   boot.initrd.kernelModules = [ "amdgpu" "tpm" "tpm_tis" "tpm_crb" ];
   boot.initrd.luks.devices."enc".device = "/dev/disk/by-uuid/2c913cfd-aa74-4629-b8a0-0a0a080e1f19";
   # boot.initrd.preLVMCommands = ''

@@ -1,6 +1,7 @@
 { self, config, pkgs, ... }:
 
 {
+  programs.noisetorch.enable = true;
   services.pipewire = {
     enable = true;
     wireplumber.enable = true;

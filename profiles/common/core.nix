@@ -82,10 +82,13 @@ in
       gcc
       gptfdisk
       iputils
+      v4l-utils
       wtf
       ##graphical
       gitkraken
       brave
+      easyeffects
+      noisetorch
       thunderbird
       haruna
       logseq
