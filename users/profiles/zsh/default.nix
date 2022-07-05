@@ -53,6 +53,8 @@ lib.mkMerge [
   (lib.mkIf pkgs.stdenv.isDarwin {
     programs.zsh.initExtra = ''
       export PATH="$PATH:$HOME/.flutter-sdk/bin" # For Flutter development on Macs
+      export PATH="$PATH:$HOME/.local/bin"
+
     '';
     home.sessionVariables = {
       FLUTTER_SDK = "$HOME/.flutter-sdk";
