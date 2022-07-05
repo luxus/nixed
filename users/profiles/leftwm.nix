@@ -155,8 +155,8 @@ in
     };
 
     theme = {
-      border_width = 1;
-      margin = 10;
+      border_width = 2;
+      margin = 8;
       default_border_color = "#333333";
       floating_border_color = "#333333";
       focused_border_color = "#732735";

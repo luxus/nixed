@@ -85,6 +85,8 @@ in
       ##graphical
       gitkraken
       brave
+      thunderbird
+      haruna
       logseq
       vaultwarden
       protonup

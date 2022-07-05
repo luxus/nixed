@@ -69,6 +69,9 @@
       blur-deviation = false;
       blur-background-frame = false;
       blur-background-fixed = false;
+      opacity-rule = [
+        "100:name *= 'YouTube'"
+      ];
     '';
     experimentalBackends = true;
   };
