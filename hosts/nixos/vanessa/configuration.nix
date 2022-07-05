@@ -19,9 +19,6 @@
   };
 
   i18n.defaultLocale = "en_US.UTF-8";
-  services.xrdp = {
-    enable = true;
-  };
   services.openssh = {
     enable = true;
     openFirewall = true;

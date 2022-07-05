@@ -9,8 +9,6 @@
     extraGroups = [ "wheel" "audio" "video" "input" "networkmanager" "libvirtd" "adbusers" "dialout" ];
     isNormalUser = true;
   });
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "luxus";
   home-manager.users.luxus = { suites, ... }: {
     imports = with suites;
       if pkgs.stdenv.isLinux then

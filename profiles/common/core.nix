@@ -65,7 +65,6 @@ in
       whois
       zoxide
       wego
-      atuin
       duf
       dog
       procs
@@ -74,11 +73,13 @@ in
       ncdu
     ] ++ (lib.optionals isLinux [
       #FIXME: fails on aarch64
+      atuin
       aria2
+
       #FIXME: not needed on aarch64?
       gnumake
+      turbovnc
       gcc
-
       gptfdisk
       iputils
       wtf
