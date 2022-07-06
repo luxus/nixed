@@ -68,6 +68,7 @@ in
       duf
       dog
       procs
+      gh
       ncspot
       ouch
       ncdu
@@ -84,6 +85,26 @@ in
       iputils
       v4l-utils
       wtf
+#PENtesting / kali https://github.com/NixOS/nixpkgs/issues/81418set
+
+      burpsuite
+      wireshark
+      hashcat
+      hashcat-utils
+      thc-hydra
+      dirb
+      medusa
+      mitmproxy
+      sipp
+      metasploit
+      aircrack-ng
+      netcat-gnu
+      john
+      lynis
+      sqlmap
+      # https://github.com/NixOS/nixpkgs/issues/173227
+      #autopsy
+
       ##graphical
       gitkraken
       brave

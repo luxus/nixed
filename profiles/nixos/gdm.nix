@@ -3,15 +3,16 @@
 {
   services.xserver.displayManager = {
     gdm = {
-      enable = true;
+      enable = false;
       settings = {
         daemon = {
           FirstVT = 7;
-          autoLogin = {
-              enable = true;
-              user = "luxus";
-        };
       };
     };
+    };
+    autoLogin = {
+      enable = true;
+      user = "luxus";
+        };
   };
 }
